@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-manatee {
+    animation: jump infinite 2s linear;
+  }
+}
+
+.App-header {
+  background-color: #FFF;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(3px + 1.5vmin);
+  color: white;
+  padding-left: 5vw;
+  padding-top: .5vw;
+}
+.App-manatee {
+  height: 5vmin;
+  pointer-events: none;
+  
+}
+.App-manatee-big {
+  height: 9vmin;
+  pointer-events: none;
+  border-width: 3px;
+  border-color: #01848c;
+  border-style: dashed;
+  border-radius: 10px;
+  
+}
+
+
+.App-body {
+  background-color: #FFF;
+  min-height: 89vh;
+  display: flex;
+  flex-direction: row;
+}
+.App-footerbg {
+  position:absolute;
+  width: 100vw;
+  left: 0;
+  align-self: center;
+  bottom: 0;
+  overflow-x: hidden;
+}
+.manatee-healthtitle {
+  font-family: 'Varela Round';
+  color: #01848c;
+  font-weight: bold;
+  font-size: 15px;
+}
+.manatee-text {
+  font-family: 'Varela Round';
+  color: #01848c;
+  font-size: 12px;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-top: 15%;
+  margin-left: 2.5%;
+}
+.App-manateebar {
+  border-radius: 10px;
+  background-color: aliceblue;
+  width: 500px;
+  text-align: left;
+  padding-left: 10px;
+  padding-bottom: 2vh;
+  box-shadow: 5px 6px 61px 0px rgba(0,0,0,0.41);
+-webkit-box-shadow: 5px 6px 61px 0px rgba(0,0,0,0.41);
+-moz-box-shadow: 5px 6px 61px 0px rgba(0,0,0,0.41);
+}
+.App-manateediv {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes jump {
+  0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+  40%  {transform: translate3d(0,25%,0) scale3d(1,1,1) rotate(90deg);}
+  100% {transform: translate3d(0,50%,0) scale3d(1,1,1)rotate(20deg);}
+}
+.jump {
+  transform-origin: 50% 50%;
+  animation: jump 2s linear alternate infinite;
+}
